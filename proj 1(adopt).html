@@ -8,16 +8,23 @@
 </head>
 <style>
         body {
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabkFYRB5oB0hkCWovV7PC9OrCh4zbnBMib14qgBxX7iO9N6R2g2e4M9NzY6tQJWEG2kE&usqp=CAU');
+           background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRabkFYRB5oB0hkCWovV7PC9OrCh4zbnBMib14qgBxX7iO9N6R2g2e4M9NzY6tQJWEG2kE&usqp=CAU');
             background-size: 1500px;
 			background-repeat: no-repeat; }
+		article { 
+            
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
+
         </style>
 		<body>
 
     <h1 style="text-align:center; border:2px solid black; background: linear-gradient(to right, #a1c4fd, #1f1c18, #ffba00);
             -webkit-text-fill-color: transparent; 
             -webkit-background-clip: text; ">Pet Adoption Form</h1>
-    <marquee>Adoption Form For users</marquee>
+    <marquee>Adoption Form For users</marquee><article>
     <form action="/submit" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Adopter Information</legend>
@@ -73,16 +80,17 @@
 		<input type="radio" name="payment" value="Credit/Debit Card"> Credit/Debit Card<br>
 		<input type="radio" name="payment" value="Net Banking"> Net Banking<br>
 		<input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery<br>
-</fieldset>
+
 
             <label for="file">Upload Your Photo:</label>
-            <input type="file" id="file" name="file" required><br><br>
+            <input type="file" id="file" name="file" required><br><br></article>
         </fieldset>
         
         <br>
         <button type="submit" onclick="alert('Are You sure to submit')">Submit Adoption Request</button><br><BR>
 		 <a href="/">Back</a>
     </form>
+	
 
 </body>
 </html>
